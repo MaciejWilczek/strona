@@ -28,7 +28,7 @@ nav img{
 }
 .tekst-sekcji{
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    padding-top: 80px;
+    padding-top: 50px;
     font-weight: 700;
     line-height: 30px;
 }
@@ -62,4 +62,15 @@ nav img{
 }
 .oddzielenie{
 
+}
+article{
+    padding-bottom: 50px;
+}
+#o-mnie{
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+#kontakt
+{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
