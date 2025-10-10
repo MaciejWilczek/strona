@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-bs-theme="dark">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8">
@@ -10,51 +10,180 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="styl.css">
+  <script src="./script.js"></script>
+  <link rel="shortcut icon" href="./img/Profilowe.png" type="image/x-icon">
 </head>
 
-<body>
-  <main>
-    <nav class="navbar navbar-expand-lg bg-secondary sticky-top">
-      <div class="container-fluid">
-        <img class="navbar-brand" width="50px" height="50px" href="#" src="./img/logo.svg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">Strona główna</a>
-            <a class="nav-link" href="./przedmioty/">Przedmioty</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+<body data-bs-theme="dark">
+  <!--Nawigacja-->
+  <div class="d-block" id="top"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <div>
-        <h2>Witaj świecie to jest moja przygoda z bootstrapem!</h2>
+      <a class="navbar-brand" href="#"><img src="./img/New Project(1).png" alt="logo" height="45px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#o-mnie">O mnie</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Źródła</a></li>
+        </ul>
       </div>
-
-      <div id="karuzela-" class="carousel slide img-thumbnail" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/mountain-range-9842371_1280.jpg" class="d-block w-100" alt="...">
+    </div>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <!--Sekcja 1-->
+    <header id="top">
+      <div class="container text-center text-light">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="h1 d-block header-glowny text-uppercase">Witaj w moim portfolio!</h1>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+          <div class="col-lg-6">
+            <h2 class="h2 d-block header-podtekst">Poznaj moje projekty</h2>
+            <a class="btn btn-warning btn-lg" href="#portfolio">Zobacz więcej</a>
           </div>
         </div>
       </div>
+    </header>
+    <!--Sekcja 2 Projekty-->
+    <div class="container" id="portfolio">
+      <div class="text-center">
+        <h1 class="text-uppercase tekst-sekcji">Portfolio</h1>
+        <h3 class="h4 tekst-podsekcji">Moje prace wykonane w szkole/wolnym czasie</h3>
+      </div>
+      <div class="row" id="karty">
+        <div class="col-lg-3 col-sm-5">
+          <div class="card">
+            <img src="./img/AppIcon.ico" class="card-img-top img-fluid" alt="logo pracy semestralnej">
+            <div class="card-body">
+              <h5 class="card-title">Bieda Football Manager 2077</h5>
+              <p class="card-text">Praca semestralna klasa 2 w technikum</p>
+              <a href="#" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#semestralna">Zobacz więcej</a>
+            </div>
+          </div>
+        </div>
 
+      </div>
     </div>
-  </main>
-  <section>
+    <!--Sekcja 3 Informacje o mnie-->
+    <div class="container" id="o-mnie">
+      <div class="text-center">
+        <h1 class="text-uppercase tekst-sekcji">O mnie</h1>
+        <h3 class="h4 tekst-podsekcji">Opisz mnie i mojego życia</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./img/Profilowe.png" alt="zdjęcie profilowe" class="img-fluid">
+          </div>
+          <div class="col-lg-6 text-center">
+            <h2>Cześć jestem Maciej</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus ipsum consequuntur ipsam ab
+              ipsa
+              eum dolore dolorem ex voluptatum sequi at cum, totam quam velit eaque libero placeat ullam?</p>
+            <p> Integer condimentum dignissim nulla, id cursus est euismod quis. Morbi dapibus at risus nec ornare.
+              Vestibulum consequat dignissim lorem, at porta sapien. Aliquam volutpat ex vitae mi facilisis tincidunt.
+              Sed
+              iaculis lacus eget ex faucibus gravida. Donec finibus enim eu sapien tempor tincidunt. Donec faucibus nec
+              velit nec porttitor. Donec at dui cursus, fringilla diam ut, rutrum lacus. Sed mi lectus, euismod ac
+              egestas
+              non, condimentum sed ipsum. Suspendisse tempus ipsum non dictum mollis. Nunc urna nisi, eleifend et semper
+              quis, sollicitudin iaculis libero. Praesent erat elit, finibus ut dolor vitae, ullamcorper feugiat metus.
+            </p>
+            <p>
+              Duis in purus nec libero ullamcorper convallis id sed nunc. Quisque cursus purus convallis sem pretium,
+              quis
+              tristique purus interdum. Donec bibendum diam eu nisi porta suscipit. Sed sagittis lorem sed ante tempor
+              aliquet. In vitae libero sagittis, egestas nibh id, lacinia enim. Maecenas id erat vel ligula iaculis
+              rutrum
+              sit amet in nibh. Ut luctus nulla vel eros fringilla, id venenatis nisl pellentesque. Praesent ac pulvinar
+              nunc. Vestibulum sit amet dolor magna. Suspendisse scelerisque nisl ut est ornare, id consequat tellus
+              mattis. Praesent semper ipsum dolor, vitae varius mi fermentum a. Quisque aliquet erat non dolor viverra,
+              nec rutrum augue feugiat. Duis enim eros, dictum in nibh et, suscipit mollis mauris. Integer eu feugiat
+              eros. </p>
+          </div>
+        </div>
+      </div>
+      <!--Inforamcje o kontakcie-->
+      <div class="container" id="kontakt">
+      <div class="text-center">
+        <h1 class="text-uppercase tekst-sekcji">Kontakt</h1>
+        <h3 class="h4 tekst-podsekcji">Sposoby na kontakt zemną</h3>
 
-  </section>
-  <script src="./js/bootstrap.min.js"></script>
+        </div>
+    </div>
+  </div>
+
+  <!--Informacje o pracy semestralnej-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="semestralna">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="semestralnaLabel">Praca Semestralna</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Napiszałem prace semestralną z myślą że będzie to szybki i przyjemny projekt na 6.</p>
+      <p>Po przeczytaniu polecenia zoriętowałem się że nie wiem czy napisze ją na 6, więc stwierdziłem że na początku
+        napiszę na 5, napisałem no i napisałem też na 6.</p>
+      <p>Więc zrobiłem i na 5 i na 6</p>
+      <img src="./img-prace/semestralna1.png" alt="menu główne" class="img-fluid rounded img-thumbnail">
+    </div>
+  </div>
+  <!--Przykładowe informacje-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="example-offcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="example-offcanvasLabel">Przykładowy projekt</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper tempor pretium. Donec dapibus
+        accumsan elit vel ornare. Aliquam erat volutpat. Vestibulum at imperdiet libero. Morbi dignissim varius
+        vulputate. Vestibulum metus tellus, elementum ac feugiat sed, maximus aliquet erat. Morbi nibh elit, fermentum
+        nec euismod vel, iaculis quis ex. Maecenas vestibulum ornare erat non egestas. Etiam id venenatis elit. Duis non
+        ante felis. Aliquam finibus porta lacus.</p>
+      <p>
+        Proin non sodales augue. Vestibulum bibendum turpis nec augue maximus, eu tincidunt lectus ullamcorper. Quisque
+        iaculis egestas feugiat. Morbi iaculis, ex ac facilisis suscipit, leo metus tempor justo, dignissim euismod mi
+        purus molestie dolor. Aenean vel quam ex. Proin semper pharetra urna nec lacinia. Nam finibus venenatis
+        pellentesque.
+      </p>
+      <p>Integer condimentum dignissim nulla, id cursus est euismod quis. Morbi dapibus at risus nec ornare. Vestibulum
+        consequat dignissim lorem, at porta sapien. Aliquam volutpat ex vitae mi facilisis tincidunt. Sed iaculis lacus
+        eget ex faucibus gravida. Donec finibus enim eu sapien tempor tincidunt. Donec faucibus nec velit nec porttitor.
+        Donec at dui cursus, fringilla diam ut, rutrum lacus. Sed mi lectus, euismod ac egestas non, condimentum sed
+        ipsum. Suspendisse tempus ipsum non dictum mollis. Nunc urna nisi, eleifend et semper quis, sollicitudin iaculis
+        libero. Praesent erat elit, finibus ut dolor vitae, ullamcorper feugiat metus. </p>
+      <p>Duis in purus nec libero ullamcorper convallis id sed nunc. Quisque cursus purus convallis sem pretium, quis
+        tristique purus interdum. Donec bibendum diam eu nisi porta suscipit. Sed sagittis lorem sed ante tempor
+        aliquet. In vitae libero sagittis, egestas nibh id, lacinia enim. Maecenas id erat vel ligula iaculis rutrum sit
+        amet in nibh. Ut luctus nulla vel eros fringilla, id venenatis nisl pellentesque. Praesent ac pulvinar nunc.
+        Vestibulum sit amet dolor magna. Suspendisse scelerisque nisl ut est ornare, id consequat tellus mattis.
+        Praesent semper ipsum dolor, vitae varius mi fermentum a. Quisque aliquet erat non dolor viverra, nec rutrum
+        augue feugiat. Duis enim eros, dictum in nibh et, suscipit mollis mauris. Integer eu feugiat eros. </p>
+      <p>
+        Nunc eleifend fermentum tellus, quis fermentum eros. Donec ac maximus leo. Curabitur maximus nulla auctor
+        iaculis consectetur. Nunc ultricies faucibus mi eu interdum. Morbi consequat eros a magna molestie, et tincidunt
+        justo dapibus. Ut neque nisl, fermentum vitae sagittis a, egestas et risus. Morbi a vehicula libero. Nulla
+        facilisi. Donec posuere ex eget metus scelerisque, eu porta tortor tristique. Aliquam commodo, orci sed semper
+        faucibus, dui lacus vehicula metus, lobortis blandit tellus sapien et erat. Vivamus id dui quis lorem blandit
+        egestas at et ante. Pellentesque suscipit, est in convallis sodales, ipsum tellus gravida ipsum, at efficitur
+        felis neque eget turpis. In varius nisl mi, et sodales quam convallis non. Sed semper egestas gravida. Cras
+        porttitor efficitur commodo. Aenean non lectus lorem.
+      </p>
+    </div>
+  </div>
+
+
+
+
 </body>
 
 </html>
