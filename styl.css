@@ -57,11 +57,13 @@ nav img {
 
 
 #portfolio img {
+    z-index: 5;
     width: auto;
     height: auto;
 }
 
 #portfolio {
+    z-index: 5;
     padding-top: 55px;
 }
 
@@ -83,6 +85,7 @@ article {
 
 
 .kolo-scroll{
+    z-index: 1;
     display: block;
     width: 450px;
     height: 450px;
