@@ -87,29 +87,44 @@ article {
 .kolo-scroll{
     z-index: 1;
     display: block;
-    width: 450px;
-    height: 450px;
+    width: 420px;
+    height: 10px;
     position: absolute;
-    bottom: -300px;
-    right: 11%;
+    translate: -50% -50%;
+    top: 106%;
+    right: 1%;
     border-radius: 50%;
-    background-color: #212529;
+    background-color: transparent;
     animation: obrot 1s linear infinite;
     animation-play-state: paused;
-    animation-delay: calc((var(--scroll)*10)*-1s);
+    animation-delay: calc((var(--scroll)*3)*-1s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 .kolo-scroll div{
     display: block;
-    background-color: #212529;
+    background-color: #5942ff;
     width: 85px;
     height: 15px;
-    position: inherit;
-    bottom: 56%;
-    left: -18%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    translate: -100% -50%;
     
     
+}
+.kolo2{
+    z-index: 1;
+    display: block;
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    translate: -50% -50%;
+    top: 106%;
+    right: 1%;
+    border-radius: 50% 50% 0 0;
+    background-color: #212529;
+    clip-path: rect(0% 100% 40% 0%);
 }
 @keyframes obrot {
     100%{
