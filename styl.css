@@ -23,12 +23,23 @@ header {
 
 nav {
     background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 nav img {
+    transition: all 0.3s ease-in-out;
     height: 3rem;
-    transition: font-size 0.3s ease-in-out;
+}
+
+.navbar-zwiniety {
+    transition: all 0.3s ease-in-out;
+    background-color: #212529;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navbar-zwiniety img{
+    transition: all 0.3s ease-in-out;
+    height: 2.5rem;
 }
 
 .tekst-sekcji {
@@ -44,17 +55,6 @@ nav img {
     padding-bottom: 90px;
 }
 
-.navbar-zwiniety {
-    transition: margin-bottom 2s ease-in-out 0.5s;
-    transition-duration: 1s;
-    background-color: #212529;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.navbar-zwiniety img {
-    height: 2rem;
-}
 
 #portfolio img {
     width: auto;
@@ -68,9 +68,6 @@ nav img {
 #o-mnie img {
     clip-path: circle();
 }
-
-.oddzielenie {}
-
 article {
     padding-bottom: 50px;
 }
