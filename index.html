@@ -33,7 +33,7 @@
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#o-mnie">O mnie</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
-          <li class="nav-item"><a class="nav-link" href="#zrodla" >Źródła</a></li>
+          <li class="nav-item"><a class="nav-link" href="#zrodla">Źródła</a></li>
         </ul>
       </div>
     </div>
@@ -49,7 +49,7 @@
             </div>
             <div class="col-lg-6">
               <h2 class="h2 d-block header-podtekst">Poznaj moje projekty</h2>
-              <a class="btn btn-warning btn-lg" href="#portfolio" >Zobacz więcej</a>
+              <a class="btn btn-warning btn-lg" href="#portfolio">Zobacz więcej</a>
             </div>
           </div>
         </div>
@@ -58,12 +58,12 @@
     <!--Sekcja 2 Projekty-->
     <article>
       <div class="container" id="portfolio">
-        <div class="text-center">
+        <div class="text-center animacja-scroll">
           <h1 class="text-uppercase tekst-sekcji">Portfolio</h1>
           <h3 class="h4 tekst-podsekcji">Moje prace wykonane w szkole/wolnym czasie</h3>
         </div>
         <div class="row" id="karty">
-          <div class="col-lg-3 col-sm-5">
+          <div class="col-lg-3 col-sm-5 animacja-scroll">
             <div class="card">
               <img src="./img/AppIcon.ico" class="card-img-top img-fluid" alt="logo pracy semestralnej">
               <div class="card-body">
@@ -81,14 +81,14 @@
     <!--Sekcja 3 Informacje o mnie-->
     <article class="bg-secondary-subtle">
       <div class="container" id="o-mnie">
-        <div class="text-center">
+        <div class="text-center animacja-scroll">
           <h1 class="text-uppercase tekst-sekcji">O mnie</h1>
           <h3 class="h4 tekst-podsekcji">Opis mnie i mojego życia</h3>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 animacja-scroll">
               <img src="./img/Profilowe.png" alt="zdjęcie profilowe" class="img-fluid">
             </div>
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 text-center animacja-scroll">
               <h2>Cześć, jestem Maciej</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus ipsum consequuntur ipsam ab
                 ipsa
@@ -128,9 +128,22 @@
       <!--Inforamcje o kontakcie-->
       <div class="container" id="kontakt">
         <div class="text-center">
-          <h1 class="text-uppercase tekst-sekcji">Kontakt</h1>
-          <h3 class="h4 tekst-podsekcji" style="padding-bottom: 15px;">Sposoby na kontakt zemną</h3>
-          <p>Możesz skontaktować się zemną za pomocą maila: <a
+          <h1 class="text-uppercase tekst-sekcji animacja-scroll">Kontakt</h1>
+          <h3 class="h4 tekst-podsekcji animacja-scroll" style="padding-bottom: 15px;">Sposoby na kontakt zemną</h3>
+          <form class="text-start">
+            <div class="mb-3 animacja-scroll">
+              <label for="Email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="Email" placeholder="marian@example.com">
+            </div>
+            <div class="mb-2 animacja-scroll">
+              <label for="Wiadmosc" class="form-label">Twoja wiadomość</label>
+              <textarea class="form-control" id="Wiadmosc" rows="4"></textarea>
+            </div>
+            <div class="text-center animacja-scroll mb-2">
+            <button type="button" onclick="PokazToast()" class="btn btn-primary">Prześlij</button>
+            </div>
+          </form>
+          <p class="animacja-scroll">Możesz skontaktować się zemną za pomocą formularza lub maila: <a
               href="mailto:kontakt@hypernos.org">kontakt@hypernos.org</a></p>
         </div>
       </div>
@@ -140,10 +153,16 @@
       <div class="container" id="zrodla">
         <div class="text-center">
           <h1 class="text-uppercase tekst-sekcji">Źródła</h1>
-          <h3 class="h4 tekst-podsekcji" style="padding-bottom: 15px;">Strony z których są zdjęcia oraz stopka</h3>
-          <p>Tło strony startowej: <a href="https://www.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_18220884.htm#fromView=image_search_similar&page=1&position=0&uuid=9e4e35a4-93c3-4699-9002-66f25828e000&query=Dark+website+background?sign-up=email">Link</a></p>
-          <p>Wygląd był w małym stopniu inspirowany z szablonu <a href="https://startbootstrap.com/theme/agency">StartBootrap Agency</a> oraz <a href="https://startbootstrap.com/theme/grayscale">GrayScale</a></p>
-          <p>No i oczywiście <br>to jest moja własna praca, wykorzystane zostały tylko szablony stron oraz dokumentacja bootstrapa Maciej</p>
+          <h3 class="h4 tekst-podsekcji" style="padding-bottom: 15px;">Strony z których są zdjęcia oraz
+            stopka</h3>
+          <p>Tło strony startowej: <a
+              href="https://www.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_18220884.htm#fromView=image_search_similar&page=1&position=0&uuid=9e4e35a4-93c3-4699-9002-66f25828e000&query=Dark+website+background?sign-up=email">Link</a>
+          </p>
+          <p>Wygląd był w małym stopniu inspirowany z szablonu <a
+              href="https://startbootstrap.com/theme/agency">StartBootrap Agency</a> oraz <a
+              href="https://startbootstrap.com/theme/grayscale">GrayScale</a></p>
+          <p>No i oczywiście <br>to jest moja własna praca, wykorzystane zostały tylko szablony stron oraz dokumentacja
+            bootstrapa Maciej</p>
         </div>
       </div>
     </article>
@@ -214,8 +233,28 @@
       </p>
     </div>
   </div>
-<div class="kolo-scroll"><div></div></div>
-<div class="kolo2"></div>
+  <div class="kolo-scroll">
+    <div></div>
+  </div>
+  <div class="kolo2"></div>
+  
+
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+
+
 </body>
 
 </html>

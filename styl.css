@@ -131,6 +131,28 @@ article {
         transform: rotate(180deg);
     }
 }
+
+.animacja-scroll{
+    animation: pojawienie linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes pojawienie {
+    0%{
+        opacity: 0;
+        scale: 0.7;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.pole-tekstowe
+{
+    margin-top: 15px;
+}
+
 @media only screen and (max-width: 991px) {
 
     header {

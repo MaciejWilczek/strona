@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', event => {
     for(var i=0; i<7; i++)
     {
         console.log("dziala")
-        row.innerHTML+='<div class="col-lg-3 col-sm-5"> <div class="card"> <img src="./img/AppIcon.ico" class="card-img-top img-fluid" alt="logo pracy semestralnej"> <div class="card-body"> <h5 class="card-title">Bieda Football Manager 2077</h5> <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a ducimus consequuntur inventore fugiat voluptate! Nulla quo in omnis. Doloremque consequatur vel optio a consectetur asperiores molestias, nihil provident est.</p> <a href="#" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#example-offcanvas">Zobacz więcej</a> </div> </div> </div>';
+        row.innerHTML+='<div class="col-lg-3 col-sm-5 animacja-scroll"> <div class="card"> <img src="./img/AppIcon.ico" class="card-img-top img-fluid" alt="logo pracy semestralnej"> <div class="card-body"> <h5 class="card-title">Bieda Football Manager 2077</h5> <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a ducimus consequuntur inventore fugiat voluptate! Nulla quo in omnis. Doloremque consequatur vel optio a consectetur asperiores molestias, nihil provident est.</p> <a href="#" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#example-offcanvas">Zobacz więcej</a> </div> </div> </div>';
     }
 });
 const wheel = document.querySelector('.kolo-scroll');
@@ -45,3 +45,11 @@ function rotateWheel() {
 }
 
 window.addEventListener('scroll', rotateWheel); // Nasłuchiwanie przewijania
+
+const toasst = new bootstrap.Toast('.toast');
+
+function PokazToast()
+{
+    console.log("test");
+    toasst.show();
+}
