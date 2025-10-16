@@ -4,5 +4,12 @@ Strona została napisana w:
 - css
 - javascript
 - bootstrap
-[Strona główna](https://hypernos.org/)
+
+Jest to typ strony pojedyńczej składających się z części:
+- Strona główna
+- Projekty
+- Opis mnie
+- Kontakt
+- Źródła
+## [hypernos.org](https://hypernos.org/)
 
