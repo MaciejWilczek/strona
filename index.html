@@ -63,20 +63,31 @@
           <h3 class="h4 tekst-podsekcji">Moje prace wykonane w szkole/wolnym czasie</h3>
         </div>
         <div class="row" id="karty">
-          <div class="col-lg-3 col-sm-5 animacja-scroll">
+          <div class="col-lg-3 col-sm-5 animacja-scroll mt-2">
             <div class="card">
-              <img src="./img/AppIcon.ico" class="card-img-top img-fluid" alt="logo pracy semestralnej">
+              <img src="./img-prace/logo BarShow2.png" class="card-img-top img-fluid" alt="logo barshow">
               <div class="card-body">
-                <h5 class="card-title">Bieda Football Manager 2077 <span class="badge text-bg-primary">Best</span></h5>
+                <h5 class="card-title">BarShow <span class="badge text-bg-primary">New</span></h5>
+                <p class="card-text">Aplikacja w kotlinie do liczenia punktów</p>
+                <a href="#" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#BarShow">Zobacz więcej</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-5 animacja-scroll mt-2">
+            <div class="card">
+              <img src="./img-prace/Logo Bieda Manager.png" class="card-img-top img-fluid" alt="logo pracy semestralnej">
+              <div class="card-body">
+                <h5 class="card-title">Bieda Football Manager 2077</h5>
                 <p class="card-text">Praca semestralna klasa 2 w technikum</p>
                 <a href="#" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                   data-bs-target="#semestralna">Zobacz więcej</a>
               </div>
             </div>
+
           </div>
 
         </div>
-      </div>
     </article>
     <!--Sekcja 3 Informacje o mnie-->
     <article class="bg-secondary-subtle">
@@ -140,7 +151,7 @@
               <textarea class="form-control" id="Wiadmosc" rows="4"></textarea>
             </div>
             <div class="text-center animacja-scroll mb-2">
-            <button type="button" onclick="PokazToast()" class="btn btn-primary">Prześlij</button>
+              <button type="button" onclick="PokazToast()" class="btn btn-primary">Prześlij</button>
             </div>
           </form>
           <p class="animacja-scroll">Możesz skontaktować się zemną za pomocą formularza lub maila: <a
@@ -180,6 +191,26 @@
         napiszę na 5, napisałem no i napisałem też na 6.</p>
       <p>Więc zrobiłem i na 5 i na 6</p>
       <img src="./img-prace/semestralna1.png" alt="menu główne" class="img-fluid rounded img-thumbnail">
+    </div>
+  </div>
+  <!--Informacje o BarShow-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="BarShow">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="BarShowLabel">BarShow</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Napisałem aplikację do liczenia punktów do tenisa stołowego.</p>
+      <p>Nie podobały mi się ograniczenia w aplikacji ze sklepu play więc postanowiłem napisać własną.</p>
+      <p>Aplikacja ma kilka unikalnych funkcji</p>
+      <p>Aplikacja wita nas możliwością wyboru gry</p>
+      <img src="./img-prace/BarShow 1.png" alt="barshow menu" class="img-fluid rounded img-thumbnail">
+      <p>Niestety aktualnie jest tylko jeden tryb</p>
+      <p>Po wybraniu gry ustala się gracza rozpoczynającego</p>
+      <img src="./img-prace/BarShow 2.png" alt="barshow menu" class="img-fluid rounded img-thumbnail">
+      <p>Wyjątkową funkcją jest pokazywanie przyszłego serwa</p>
+      <img src="./img-prace/BarShow 4.png" alt="barshow menu" class="img-fluid rounded img-thumbnail">
+      <p>Jak można zauważyć pojawia się blada kropka w miejscu oznaczenia serwa oznacza pokazuje ona, że następny serw jest przeciwnika</p>
     </div>
   </div>
   <!--Przykładowe informacje-->
@@ -237,21 +268,21 @@
     <div></div>
   </div>
   <div class="kolo2"></div>
-  
 
 
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
     </div>
   </div>
-</div>
 
 
 
