@@ -50,6 +50,5 @@ const toasst = new bootstrap.Toast('.toast');
 
 function PokazToast()
 {
-    console.log("test");
-    toasst.show();
+    bootstrap.Toast.getOrCreateInstance(document.getElementById('toast')).show()
 }
