@@ -30,7 +30,15 @@ nav img {
     transition: all 0.3s ease-in-out;
     height: 3rem;
 }
-
+.navbar-rozwiniety{
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+    mask-image: linear-gradient(
+    to bottom,
+    black 50%,
+    rgba(0,0,0,0) 100%
+  );
+}
 .navbar-zwiniety {
     transition: all 0.3s ease-in-out;
     background-color: #212529;
@@ -173,5 +181,31 @@ article {
     .kolo-scroll div{
         display: none;
     }
+    .kolo2{
+        display: none;
+    }
+    
 
+}
+@media only screen and (max-width: 1904px) {
+.kolo2{
+        display: none;
+    }
+     .kolo-scroll{
+        display: none;
+    }
+    .kolo-scroll div{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1950px) {
+    .kolo2{
+        display: none;
+    }
+     .kolo-scroll{
+        display: none;
+    }
+    .kolo-scroll div{
+        display: none;
+    }
 }
