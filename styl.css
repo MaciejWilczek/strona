@@ -209,3 +209,26 @@ article {
         display: none;
     }
 }
+
+@media only screen and (max-height: 920px) {
+.kolo2{
+        display: none;
+    }
+     .kolo-scroll{
+        display: none;
+    }
+    .kolo-scroll div{
+        display: none;
+    }
+}
+@media only screen and (min-height: 960px) {
+    .kolo2{
+        display: none;
+    }
+     .kolo-scroll{
+        display: none;
+    }
+    .kolo-scroll div{
+        display: none;
+    }
+}
